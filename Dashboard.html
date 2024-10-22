@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Arsip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                Aplikasi Arsip
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tambahdata.html">Tambah Data Arsip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tambah Kode Arsip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tambah Bidang</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Adminarsip
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container text-center my-4">
+        <h1>Selamat Pagi, Adminarsip</h1>
+        <h2>Dashboard</h2>
+    </div>
+
+    <!-- Search and PDF Button -->
+    <div class="container my-4">
+        <div class="row g-2">
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Cari">
+            </div>
+            <div class="col-12 col-md-3">
+                <select class="form-select">
+                    <option value="1">Cari berdasarkan</option>
+                    <!-- Add other options here -->
+                </select>
+            </div>
+            <div class="col-12 col-md-3 text-md-end text-center">
+                <button class="btn btn-primary w-100 w-md-auto">PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center flex-wrap">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <!-- Add more pagination items as needed -->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Table -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>NO.</th>
+                        <th>Kode Rak</th>
+                        <th>Kode Box</th>
+                        <th>Kode Ordner</th>
+                        <th>Kode Arsip</th>
+                        <th>No Akun</th>
+                        <th>Bidang</th>
+                        <th>Sub Bidang</th>
+                        <th>Kegiatan</th>
+                        <th>Tahun</th>
+                        <th>Status Arsip</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>A1</td>
+                        <td>A1-1</td>
+                        <td>A1-1-1</td>
+                        <td>BN.00.00</td>
+                        <td>1</td>
+                        <td>Bagian Umum</td>
+                        <td>Program Keuangan</td>
+                        <td>DIPA</td>
+                        <td>2016</td>
+                        <td>ada</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">Edit</button>
+                            <button class="btn btn-sm btn-danger">Hapus</button>
+                        </td>
+                    </tr>
+                    <!-- Repeat rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

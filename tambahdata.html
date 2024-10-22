@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Arsip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                Aplikasi Arsip
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Dasbord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tambah Data Arsip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tambah Kode Arsip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tambah Bidang</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Adminarsip
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container text-center my-4">
+        <h2>Tambah Data Arsip</h2>
+    </div>
+
+    <!-- Form Arsip -->
+    <div class="container my-4">
+        <form>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="kodeRak" class="form-label">Kode Rak:</label>
+                        <input type="text" class="form-control" id="kodeRak" placeholder="Masukkan kode rak">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kodeBox" class="form-label">Kode Box:</label>
+                        <input type="text" class="form-control" id="kodeBox" placeholder="Masukkan kode box">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kodeOrdner" class="form-label">Kode Ordner:</label>
+                        <input type="text" class="form-control" id="kodeOrdner" placeholder="Masukkan kode ordner">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kodeArsip" class="form-label">Kode Arsip:</label>
+                        <input type="text" class="form-control" id="kodeArsip" placeholder="Masukkan kode arsip">
+                    </div>
+                    <div class="mb-3">
+                        <label for="noAkun" class="form-label">No Akun:</label>
+                        <input type="text" class="form-control" id="noAkun" placeholder="Masukkan no akun">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="bidang" class="form-label">Bidang:</label>
+                        <input type="text" class="form-control" id="bidang" placeholder="Masukkan bidang">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subBidang" class="form-label">Sub Bidang:</label>
+                        <input type="text" class="form-control" id="subBidang" placeholder="Masukkan sub bidang">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kegiatan" class="form-label">Kegiatan:</label>
+                        <input type="text" class="form-control" id="kegiatan" placeholder="Masukkan kegiatan">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tahun" class="form-label">Tahun:</label>
+                        <input type="text" class="form-control" id="tahun" placeholder="Masukkan tahun">
+                    </div>
+                    <div class="mb-3">
+                        <label for="statusArsip" class="form-label">Status Arsip:</label>
+                        <input type="text" class="form-control" id="statusArsip" placeholder="Masukkan status arsip">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Tambah Data &gt;&gt;</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
